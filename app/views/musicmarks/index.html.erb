@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Musicmarks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Band</th>
+      <th>Album</th>
+      <th>Category</th>
+      <th>Kind</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @musicmarks.each do |musicmark| %>
+      <tr>
+        <td><%= musicmark.name %></td>
+        <td><%= musicmark.band %></td>
+        <td><%= musicmark.album %></td>
+        <td><%= musicmark.category_id %></td>
+        <td><%= musicmark.kind_id %></td>
+        <td><%= link_to 'Show', musicmark %></td>
+        <td><%= link_to 'Edit', edit_musicmark_path(musicmark) %></td>
+        <td><%= link_to 'Destroy', musicmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Musicmark', new_musicmark_path %>

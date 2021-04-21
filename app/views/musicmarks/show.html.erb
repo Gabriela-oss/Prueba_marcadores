@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @musicmark.name %>
+</p>
+
+<p>
+  <strong>Band:</strong>
+  <%= @musicmark.band %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @musicmark.album %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @musicmark.category_id %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @musicmark.kind_id %>
+</p>
+
+<%= link_to 'Edit', edit_musicmark_path(@musicmark) %> |
+<%= link_to 'Back', musicmarks_path %>
