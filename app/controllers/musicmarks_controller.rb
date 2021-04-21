@@ -4,6 +4,9 @@ class MusicmarksController < ApplicationController
   # GET /musicmarks or /musicmarks.json
   def index
     @musicmarks = Musicmark.all
+    @musicmark = Musicmark.new
+    @kinds = Kind.all
+    @categories = Category.all
   end
 
   # GET /musicmarks/1 or /musicmarks/1.json
@@ -27,6 +30,7 @@ class MusicmarksController < ApplicationController
       if @musicmark.save
         format.html { redirect_to @musicmark, notice: "Musicmark was successfully created." }
         format.json { render :show, status: :created, location: @musicmark }
+        format.js
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @musicmark.errors, status: :unprocessable_entity }

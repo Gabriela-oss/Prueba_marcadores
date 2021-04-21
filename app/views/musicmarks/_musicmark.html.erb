@@ -1,0 +1,10 @@
+<tr>
+  <td><%= musicmark.name %></td>
+  <td><%= musicmark.band %></td>
+  <td><%= musicmark.album %></td>
+  <td><%= musicmark.category.name %></td>
+  <td><%= musicmark.kind.name %></td>
+  <td><%= link_to 'Show', musicmark %></td>
+  <td><%= link_to 'Edit', edit_musicmark_path(musicmark) %></td>
+  <td><%= link_to 'Destroy', musicmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

@@ -5,3 +5,33 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Musicmark.destroy_all
+Category.destroy_all
+Kind.destroy_all
+
+cat = Category.create(name: 'music', character: true, genre: 'Pop')
+cat1 = Category.create(name: 'music', character: false, genre: 'Romantic')
+cat2 = Category.create(name: 'music', character: true, genre: 'Reggae')
+
+
+kind = Kind.create(name: 'video')
+kind1 = Kind.create(name: 'multimedia')
+kind2 = Kind.create(name: 'multimedia')
+
+
+music = Musicmark.create!(name: 'thunder', band:'Imagine Dragons', album: 'example', category: cat, kind: kind)
+music = Musicmark.create!(name: 'eiffel', band:'blue', album: 'example', category: cat1, kind: kind1)
+music = Musicmark.create!(name: 'midnight Sky', band:'Miley Cyrus', album: 'example', category: cat2, kind: kind2)
+music = Musicmark.create!(name: 'Dont worry be happy', band:'Bob Marley', album: 'example', category: cat, kind: kind)
+music = Musicmark.create!(name: 'See You Again', band:'Wiz Khalifa', album: 'example', category: cat1, kind: kind1)
+music = Musicmark.create!(name: 'Video Games', band:'Lana del Rey', album: 'example', category: cat2, kind: kind2)
+music = Musicmark.create!(name: 'The Greatest', band:'Sia', album: 'example', category: cat, kind: kind)
+music = Musicmark.create!(name: 'One call away', band:'Charlie Puth', album: 'example', category: cat1, kind: kind1)
+music = Musicmark.create!(name: 'Deajaría todo', band:'Chayanne', album: 'example', category: cat2, kind: kind2)
+music = Musicmark.create!(name: 'Ride', band:'Lana del Rey', album: 'example', category: cat, kind: kind)
+music = Musicmark.create!(name: 'Quiero', band:'Ricardo Arjona', album: 'example', category: cat1, kind: kind1)
+music = Musicmark.create!(name: 'Lose you to love me', band:'Selena Gomez', album: 'example', category: cat2, kind: kind2)
+music = Musicmark.create!(name: 'Un siglo sin ti', band:'Chayanne', album: 'example', category: cat1, kind: kind1)
+music = Musicmark.create!(name: 'Blue Jeans', band:'Lana del Rey', album: 'example', category: cat, kind: kind)
