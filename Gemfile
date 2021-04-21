@@ -44,6 +44,7 @@ group :development do
   gem 'spring'
   gem 'faker'
   gem 'rails-erd'
+  gem 'groupdate'
 end
 
 group :test do
