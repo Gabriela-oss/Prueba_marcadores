@@ -43,7 +43,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'faker'
+
   gem 'rails-erd'
+  
   gem 'groupdate'
 end
 
@@ -59,3 +61,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "chartkick", "~> 4.0"
+
+gem 'ruby-graphviz'

@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 2021_04_21_025953) do
     t.string "name", null: false
     t.boolean "character"
     t.string "genre"
+    t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_categories_on_category_id"
   end
 
   create_table "kinds", force: :cascade do |t|
@@ -38,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_04_21_025953) do
     t.index ["kind_id"], name: "index_musicmarks_on_kind_id"
   end
 
+  add_foreign_key "categories", "categories"
   add_foreign_key "musicmarks", "categories"
   add_foreign_key "musicmarks", "kinds"
 end

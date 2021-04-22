@@ -5,8 +5,6 @@ class MusicmarksController < ApplicationController
   def index
     @musicmarks = Musicmark.all
     @musicmark = Musicmark.new
-    @kinds = Kind.all
-    @categories = Category.all
   end
 
   # GET /musicmarks/1 or /musicmarks/1.json
