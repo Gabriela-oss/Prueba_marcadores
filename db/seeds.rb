@@ -14,6 +14,7 @@ Kind.destroy_all
 cat = Category.create(name: 'music', character: true, genre: 'Pop')
 cat1 = Category.create(name: 'music', character: false, genre: 'Romantic')
 cat2 = Category.create(name: 'music', character: true, genre: 'Reggae')
+sub1 = Category.create(name: 'music', character: true, genre: 'Reggae')
 
 
 kind = Kind.create(name: 'video')

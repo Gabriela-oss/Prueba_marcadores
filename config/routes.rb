@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'home/index'
   root 'musicmarks#index'
+  
+  get 'home/index'
+  get 'categories/:id/api', to: 'categories#api', as: 'api'
   resources :musicmarks
   resources :categories
   resources :kinds
