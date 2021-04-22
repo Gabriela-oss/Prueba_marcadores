@@ -12,13 +12,23 @@ Category.destroy_all
 Kind.destroy_all
 
 cat = Category.create(name: 'music', character: true, genre: 'Pop')
-cat1 = Category.create(name: 'music', character: false, genre: 'Romantic')
-cat2 = Category.create(name: 'music', character: true, genre: 'Reggae')
+cat1 = Category.create(name: 'letters', character: false, genre: 'Romantic')
+cat2 = Category.create(name: 'video', character: true, genre: 'Reggae')
+
 sub1 = Category.create(name: 'music', character: true, genre: 'Reggae')
+sub2 = Category.create(name: 'letras', character: true, genre: 'Pop')
+sub3 = Category.create(name: 'video', character: true, genre: 'Romantic')
+sub4 = Category.create(name: 'music', character: true, genre: 'Regaeton')
+sub5 = Category.create(name: 'letras', character: true, genre: 'Urbano')
+sub6 = Category.create(name: 'music', character: true, genre: 'Pop')
+sub7 = Category.create(name: 'video', character: true, genre: 'Sad')
+sub8 = Category.create(name: 'letras', character: true, genre: 'Reggae')
+sub9 = Category.create(name: 'music', character: true, genre: 'Rancheras')
+sub10 = Category.create(name: 'video', character: true, genre: 'Reggae')
 
 
 kind = Kind.create(name: 'video')
-kind1 = Kind.create(name: 'multimedia')
+kind1 = Kind.create(name: 'letters')
 kind2 = Kind.create(name: 'multimedia')
 
 
