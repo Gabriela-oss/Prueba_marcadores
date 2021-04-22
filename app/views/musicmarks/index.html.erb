@@ -4,8 +4,8 @@
 
   <%= render 'form', musicmark: @musicmark %>
 
-<table>
-  <thead>
+<table class="table">
+  <thead class="thead-dark">
     <tr>
       <th>Name</th>
       <th>Band</th>
@@ -25,6 +25,6 @@
 
 <br>
 
-<%= link_to 'New Musicmark', new_musicmark_path %>
+<button type="button" class="btn btn-danger text-dark"><%= link_to 'New Musicmark', new_musicmark_path %></button>
 
 <div id="musicmark-content"></div>
